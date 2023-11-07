@@ -4,7 +4,6 @@
 
 Данная реализация основна на алгоритме BASE62. Внутри используется асинхронизм для оптимизации работы при высоких нагрузках.
 
-# Cache
 [Кэш](https://github.com/Dlakares/UrlShortener/blob/medusa/rustam-BC-6350-url-shortener/src/main/java/faang/school/urlshortenerservice/cache/HashCache.java) используется для хранения заранее сгенерированных хэшей для ссылок. Есть коофицент заполнения по истечению которого начинает генерацию хэшей в отдельном потоке
 
 [Контроллер](https://github.com/Dlakares/UrlShortener/blob/medusa/rustam-BC-6350-url-shortener/src/main/java/faang/school/urlshortenerservice/controller/UrlController.java) как точка входа в приложение. Используется для выдачи ссылок и редиректа по основной ссылке
